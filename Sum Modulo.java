@@ -4,8 +4,8 @@ Question Link: https://my.newtonschool.co/playground/code/mv1upsr2h67b
 import java.io.*; // for handling input/output
 import java.util.*; // contains Collections framework
 
-// don't change the name of this class
-// you can add inner classes if needed
+// don't change the name of this class //
+// you can add inner classes if needed //
 class Main {
     public static int dSum(int N) {
         int sum = 0;
