@@ -10,16 +10,12 @@ import java.util.*; // contains Collections framework
 class Main {
     public static void main (String[] args) {
         Scanner sc = new Scanner(System.in);
-        int A = sc.nextInt();
-        int B = sc.nextInt();
-        boolean possible = false;
-        for (int i = 1; i <= 6; i++) {
-            if (i <= B && i + 6 * (A - 1) >= B) {
-                possible = true;
-                break;
-            }
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        if (b % a == 0 || (b - a) % a == 0) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
         }
-        System.out.println(possible ? "Yes" : "No");
-        sc.close();
     }
 }
