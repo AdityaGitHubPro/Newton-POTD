@@ -12,7 +12,10 @@ class Main {
         // Your code here
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
-        String ans = s + s + s;
-        System.out.println(ans.substring(0,6));
+        String answer = s + s + s;
+        while (answer.length() < 6) {
+            answer += s;
+        }
+        System.out.println(answer.substring(0, 6));
     }
 }
